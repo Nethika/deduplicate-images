@@ -23,24 +23,19 @@ from matplotlib.pyplot import imshow
 
 #%matplotlib inline   #To show images in Jupyter Notebook
 
-"""
-To show images in Jupyter Notebook
-"""
+
 def show_image(img_path):
+    """To show images in Jupyter Notebook"""
     content_image = scipy.misc.imread(img_path)
     imshow(content_image)
     return
 
-"""
-To calculate distance between hash
-"""
 def distance(x,y):
+    """To calculate distance between hash"""
     return x-y
 
-"""
-To find the connected images
-"""
 def connected_tuples(pairs):
+    """To find the connected images"""
     # for every element, we keep a reference to the list it belongs to
     lists_by_element = {}
  
